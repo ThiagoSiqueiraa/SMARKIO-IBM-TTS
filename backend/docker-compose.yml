@@ -1,21 +1,21 @@
-version: '3.3'
+version: '3.7'
 
 services:
   smarkio_app:
-    image: thiagosiqueira/dockersmarkio:latest
+    image: thiagosiqueira/dockersmarkio
     ports:
       - '3000:3000'
     #volumes:
      # - .:/usr/app
     depends_on:
-      - mysql
+      - db
     environment:
-      - DB_HOST=mysql
-    entrypoint: ./entrypoint.sh
+      - DB_HOST=db
+    entrypoint: ./wait-for-it.sh db:3306 -- ./entrypoint.sh
 
 
-  mysql:
-    image: mysql
+  db:
+    image: mysql:5.6
     ports:
       - '3306:3306'
     command: --init-file /data/application/init.sql
