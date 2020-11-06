@@ -27,7 +27,7 @@ $ git clone https://github.com/ThiagoSiqueiraa/SMARKIO-IBM-TTS.git
 
 # Acesse a pasta do backend
 
-# Abra o arquivo entrypoint.sh (preferencialmente com VSCODE), siga os passos da imagem e siga para a proxima seção
+# Abra o arquivo entrypoint.sh e também o wait-for-it.sh (preferencialmente com VSCODE), siga os passos da imagem e siga para a proxima seção
 
 
 ```
