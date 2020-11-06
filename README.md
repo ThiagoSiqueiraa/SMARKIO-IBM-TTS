@@ -18,11 +18,25 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Docker](https://www.docker.com/get-started), [Docker Compose](https://docs.docker.com/compose/install/)
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
+### 🧨 LEIA IMPORTANTE
+```bash
+# Siga os seguintes passos para evitar futuros erros
+
+# Clone este repositório
+$ git clone https://github.com/ThiagoSiqueiraa/SMARKIO-IBM-TTS.git
+
+# Acesse a pasta do backend
+
+# Abra o arquivo entrypoint.sh (preferencialmente com VSCODE), siga os passos da imagem e siga para a proxima seção
+
+
+```
+![alt text](https://i.stack.imgur.com/sb1pU.png)
+
 ### 🎲 Rodando o Backend (servidor)
 
 ```bash
-# Clone este repositório
-$ git clone https://github.com/ThiagoSiqueiraa/SMARKIO-IBM-TTS.git
+
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd SMARKIO-IBM-TTS
