@@ -18,7 +18,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Docker](https://www.docker.com/get-started), [Docker Compose](https://docs.docker.com/compose/install/)
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### 🧨 LEIA IMPORTANTE
+### 🧨 LEIA IMPORTANTE (CASO VOCÊ USE WINDOWS OU TENHA O ERRO standard_init_linux.go:190: exec user process caused “no such file or directory”)
 ```bash
 # Siga os seguintes passos para evitar futuros erros
 
@@ -28,6 +28,13 @@ $ git clone https://github.com/ThiagoSiqueiraa/SMARKIO-IBM-TTS.git
 # Acesse a pasta do backend
 
 # Abra o arquivo entrypoint.sh e também o wait-for-it.sh (preferencialmente com VSCODE), siga os passos da imagem e siga para a proxima seção
+
+# Caso você já tenha executado o build da imagem, execute novamente:
+$ docker build -t thiagosiqueira/dockersmarkio .
+
+# Caso já tenha executado o docker-compose up, será preciso remover a pasta volumes dentro de backend, execute também, se necessário:
+$ docker-compose down
+$ docker-compose up
 
 
 ```
