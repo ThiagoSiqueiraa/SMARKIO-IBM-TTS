@@ -19,10 +19,6 @@ export default class TTSWatsonController {
 
     const buffer = await TTSComment.execute(comment);
 
-    if (!buffer) {
-      throw new AppError('Algum erro aconteceu ao reproduzir o áudio');
-    }
-
     response.setHeader('Content-Type', 'audio/wav');
     //  response.setHeader('Content-Disposition', `attachment; filename=audio.wav`);
     response.setHeader('Content-Disposition', `inline`);

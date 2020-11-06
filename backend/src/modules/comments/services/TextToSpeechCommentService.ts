@@ -24,7 +24,13 @@ class TextToSpeechCommentService {
           throw new AppError('Erro ao executar o serviço da IBM');
         });
 
-    return getBuffer();
+    const buffer = getBuffer();
+
+    if (!buffer) {
+      throw new AppError('Algum erro aconteceu ao reproduzir o áudio');
+    }
+
+    return buffer;
   }
 }
 

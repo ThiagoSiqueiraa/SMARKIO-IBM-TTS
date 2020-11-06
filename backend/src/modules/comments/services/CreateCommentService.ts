@@ -1,5 +1,5 @@
 import Comment from '@modules/comments/infra/typeorm/entities/Comment';
-import AppError from '@shared/errors/AppError';
+import 'reflect-metadata';
 import { injectable, inject } from 'tsyringe';
 import ICreateCommentDTO from '../dtos/ICreateCommentDTO';
 import ICommentsRepository from '../repositories/ICommentsRepository';
