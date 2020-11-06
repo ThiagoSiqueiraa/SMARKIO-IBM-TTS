@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.3'
 
 services:
   smarkio_app:
@@ -15,7 +15,7 @@ services:
 
 
   db:
-    image: mysql:5.6
+    image: mysql:latest
     ports:
       - '3306:3306'
     command: --init-file /data/application/init.sql
@@ -26,3 +26,4 @@ services:
       - MYSQL_HOST=localhost
       - MYSQL_ROOT_PASSWORD=docker
       - MYSQL_DATABASE=smarkio_watson
+      - MYSQL_USER=root
