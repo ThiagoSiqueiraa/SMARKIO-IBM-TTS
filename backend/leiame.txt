@@ -1,0 +1,2 @@
+docker build -t thiagosiqueira/dockersmarkio .
+docker-composer up
