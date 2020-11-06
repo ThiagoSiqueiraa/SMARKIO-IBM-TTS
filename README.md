@@ -29,8 +29,13 @@ $ git clone https://github.com/ThiagoSiqueiraa/SMARKIO-IBM-TTS.git
 
 # Abra o arquivo entrypoint.sh e também o wait-for-it.sh (preferencialmente com VSCODE), siga os passos da imagem e siga para a proxima seção
 
-#Caso você já tenha executado o build da imagem, execute novamente:
+# Caso você já tenha executado o build da imagem, execute novamente:
 $ docker build -t thiagosiqueira/dockersmarkio .
+
+# Caso já tenha executado o docker-compose up, será preciso remover a pasta volumes dentro de backend, execute também, se necessário:
+$ docker-compose down
+$ docker-compose up
+
 
 ```
 ![alt text](https://i.stack.imgur.com/sb1pU.png)
