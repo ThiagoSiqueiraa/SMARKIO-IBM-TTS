@@ -1,0 +1,7 @@
+export default {
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  pass: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
+  db: process.env.DB_DATABASE,
+};

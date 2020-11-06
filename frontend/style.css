@@ -1,0 +1,25 @@
+.border-vertical-right {
+  border-right: 1px solid #ccc;
+}
+
+body, html {
+  height: 100vh;
+}
+
+
+.card {
+  box-shadow: none;
+  padding: 33px;
+  border: 0px !important;
+}
+.card .card-content {
+  margin-bottom: 20px;
+}
+
+.card-content{
+  padding: 10px 0 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 5px 5px;
+
+}
+
